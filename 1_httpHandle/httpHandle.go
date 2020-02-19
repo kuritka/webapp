@@ -12,7 +12,7 @@ type myHandler struct {
 
 
 //http.Handle(pattern string , Handler ) - handler interface with single ServeHTTP function
-//implementing Handler interface must be done here
+//implementing Handler interface must be put here
 func (h *myHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	w.Write([]byte(fmt.Sprintf("%v world", h.greeting)))
 }

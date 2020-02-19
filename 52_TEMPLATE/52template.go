@@ -12,7 +12,6 @@ func populateTemplates() *template.Template {
 	const basePath = "templates"
 	template.Must(result.ParseGlob(basePath + "/*.html"))
 	return result
-
 }
 
 func main(){
