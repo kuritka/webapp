@@ -1,0 +1,16 @@
+{{/*if we define multiple templates called "content" , only the last one will be defined */}}
+{{define "content"}}
+<div class="supercontent">
+    <div class="content">
+        this is shopping <bold>content 222</bold>
+        <p>
+            Colors:
+            {{range .Colors}}
+                <p class="{{if eq .Bold true }}bld{{else}} slm{{end}}" >
+                    {{.Color}}
+                </p>
+            {{end}}
+        </p>
+    </div>
+</div>
+{{end}}

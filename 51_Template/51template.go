@@ -6,10 +6,10 @@ import (
 	"os"
 )
 
-func main(){
+func main() {
 	templateString := "Lemonade Stand Supply"
-//template exists within html/temlate and  text/template. html/template automatically escapses string into literal strings to avoid security issues.
-//text/template template doesnt have it
+	//template exists within html/temlate and  text/template. html/template automatically escapses string into literal strings to avoid security issues.
+	//text/template template doesnt have it
 	t, err := template.New("title").Parse(templateString)
 	if err != nil {
 		fmt.Println(err)
@@ -20,6 +20,5 @@ func main(){
 	if err != nil {
 		fmt.Println(err)
 	}
-
 
 }

@@ -1,0 +1,50 @@
+html,
+body {
+    margin:0;
+    padding:0;
+    height:100%;
+}
+
+header {
+    background: #1d1d1e;
+    border-bottom:  #5d1d5e solid 5px;
+    color: whitesmoke;
+    font-family: Wellfleet ;
+    font-size: 3.5em;
+    position: absolute;
+    width:100%;
+}
+
+footer {
+    width:100%;
+    height:100px;
+    position:absolute;
+    bottom:0;
+    left:0;
+    background: red;
+    border-top:  indianred solid 5px;
+    color: whitesmoke;
+    font-family: Wellfleet, serif ;
+    font-size: 1.5em;
+}
+
+.content {
+    min-height:100%;
+    position:relative;
+    padding-left: 25px;
+    padding-top: 95px;
+}
+
+
+.bld {
+    font-size: medium;
+    text-decoration: indianred solid;
+    font-style: italic;
+    color: indianred;
+}
+
+.slm {
+    font-family: "Fira Code Light","Fira Code Light";
+    color: forestgreen;
+    font-size: large;
+}

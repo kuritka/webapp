@@ -1,0 +1,17 @@
+{{/*if we define multiple templates called "content" , only the last one will be defined */}}
+{{define "content"}}
+<div class="supercontent">
+    <div class="content">
+        <h1>51, 52 ,53, 54...</h1>
+        <p>
+            Colors:
+            {{range .Colors}}
+                <span class="{{if eq .Bold true }}bld{{else}} slm{{end}}" >
+                    {{.Color}}
+                </span>
+            {{end}}
+        </p>
+        <div><img src="/img/mightwork.png" width="50%" height="50%"></div>
+    </div>
+</div>
+{{end}}

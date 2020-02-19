@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/styles.css">
+{{/*block is the optional. I can provide script template, I can provide style template but I dont have to*/}}
+    {{block "styles" .}}{{end}}
+{{/*    .Title = field of  the datacontext*/}}
+    <title>{{.Title}}</title>
+</head>
+<body>
+{{template "_header.html" .}}
+{{template "content" .}}
+{{template "_footer.html"}}
+{{block "script" .}}{{end}}
+</body>
+</html>

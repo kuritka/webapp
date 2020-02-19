@@ -3,15 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="/css/styles.css">
+{{/*    block is the optional. I can provide script template, I can provide style template but I dont have to*/}}
+    {{block "styles" .}}{{end}}
     <title>SHOP</title>
 </head>
 <body>
     {{template "_header.html"}}
-    <div class="supercontent">
-        <div class="content">
-            this is shopping
-        </div>
-    </div>
+    {{template "content"}}
     {{template "_footer.html"}}
+    {{block "script" .}}{{end}}
 </body>
 </html>
