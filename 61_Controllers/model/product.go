@@ -26,6 +26,10 @@ func GetCategory(categoryId int) Category {
 	return Category{"Empty", 0}
 }
 
+
+//poco entities are from model, but UI has  different mapping than DB
+//Thats why ViewModel comes
+//In ViewModels we map database entities to UI entities and vice versa.
 func GetColors(categoryId int) []viewmodel.Color {
 	cat := GetCategory(categoryId)
 	return colors[cat.Name]
